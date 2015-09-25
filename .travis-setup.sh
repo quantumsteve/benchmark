@@ -19,7 +19,7 @@ if [ "$STD" = "c++11" ] && [ "$CXX" = "g++" ]; then
     sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 90
     sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 90
 elif [ "$CXX" = "clang++" ]; then
-    sudo apt-get install -qq clang-3.6
+    sudo apt-get install -qq clang-3.6 gcc-4.8 g++-4.8 libstdc++-4.8-dev
     sudo update-alternatives --install /usr/local/bin/clang   clang   /usr/bin/clang-3.6 90
     sudo update-alternatives --install /usr/local/bin/clang++ clang++ /usr/bin/clang++-3.6 90
     export PATH=/usr/local/bin:$PATH
